@@ -1,24 +1,15 @@
-This is free and unencumbered software released into the public domain.
+# Internal-Use License Agreement
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+© 2026 LSWBRestore, built by Kacper Jakubczyk. All rights reserved.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+This repository, including all source code, assets, configuration files, documentation, scripts, and any other materials contained herein (collectively referred to as the “Materials”), is proprietary and confidential. Access to the Materials is granted solely to authorized collaborators for the purpose of developing, testing, and maintaining the associated project.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+By accessing, using, or modifying the Materials, you acknowledge and agree that you will treat all contents as strictly confidential and will not disclose, distribute, or publish any part of the Materials to any individual or entity not expressly authorized by LSWBRestore Team. The Materials may not be used for any purpose other than the internal development of the project for which they are intended. Any other use, including commercial exploitation, resale, or distribution outside of the authorized development team, is strictly prohibited.
 
-For more information, please refer to <https://unlicense.org>
+All rights, title, and interest in and to the Materials remain exclusively with LSWBRestore Team. Any modifications, improvements, or derivative works created by you as part of the authorized development process will also be considered the exclusive property of LSWBRestore Team. You may not claim any ownership, copyright, or authorship rights over any portion of the Materials.
+
+Your access to this repository may be revoked at any time at the sole discretion of LSWBRestore Team. Upon termination of access or completion of your participation in the project, you are required to immediately cease all use of the Materials and permanently delete any copies, whether digital or otherwise, that are in your possession.
+
+This license does not grant any rights to use trademarks, patents, or other intellectual property owned by LSWBRestore Team, except as strictly necessary for the authorized development work. By continuing to access or use the Materials, you agree to be bound by all terms set forth in this agreement and understand that any violation may result in immediate revocation of access and potential legal action.
+
+All collaborators are expected to maintain the highest standards of integrity and professionalism when handling the Materials and to take all reasonable measures to prevent unauthorized access, copying, or dissemination.
