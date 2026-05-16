@@ -70,7 +70,7 @@ Server/
 ├── media/
 │   ├── characters/
 │   │   └── audio/
-│   │       └── placeholder.swf
+│   │       └── placeholder.swf              # Hollow temporary file
 │   └── logos/
 │       ├── esrb.png
 │       ├── lucasarts.png
