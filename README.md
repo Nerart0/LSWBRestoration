@@ -97,7 +97,8 @@ Server/
 **Requirements:** Python 3
 
 ```bash
-cd Server/
+git clone https://github.com/Nerart0/LSWBRestoration
+cd LSWBRestoration/
 sudo python3 server.py
 ```
 
