@@ -119,7 +119,7 @@ Then open your browser and go to: `http://127.0.0.1`
 ## Tools Used
 
 - [Ruffle](https://ruffle.rs/) — Flash emulator
-- [JPEXS Free Flash Decompiler]([https://github.com/jindrapetrik/jpexs-ffdec](https://github.com/jindrapetrik/jpexs-decompiler)) — SWF decompilation and editing
+- [JPEXS Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) — SWF decompilation and editing
 - Python 3 — local HTTP server
 
 ---
