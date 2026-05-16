@@ -61,9 +61,11 @@ This project restores as much of the original functionality as possible using a 
 ```
 Server/
 ├── index.html              # Main HTML page (uses Ruffle)
+├── index.jsp               # Original JavaServer page
 ├── server.py               # Local Python HTTP server
 ├── GalaxyLoader.swf        # Original loader SWF
 ├── LSWIII.swf              # Main game SWF (modified)
+├── config.xml              # Variables configuration
 ├── favicon.ico
 ├── media/
 │   ├── characters/
@@ -78,7 +80,7 @@ Server/
 │   ├── LSWIII.swf          # Copy for GalaxyLoader
 │   └── stardestroyer.swf   # Custom map SWF
 └── xml/
-    ├── config.xml
+    ├── config.xml          # Copy for GalaxyLoader
     ├── index.xml
     ├── characters.xml
     ├── achievements.xml
@@ -126,3 +128,4 @@ Then open your browser and go to: `http://127.0.0.1`
 
 Original game by **TT Games** / **LucasArts**, published 2011.  
 This is a fan preservation project with no commercial intent.
+Need to talk? Email: devkacper80@gmail.com Discord: nerart__
