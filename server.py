@@ -1,5 +1,4 @@
 import os
-os.chdir('/home/Nerart/Pobrane/temp/Server/')
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 class CORSHandler(SimpleHTTPRequestHandler):
     def end_headers(self):
