@@ -2,6 +2,8 @@
 
 A community-driven effort to restore and run the 2011 promotional beta of **LEGO Star Wars III: The Clone Wars**, originally hosted on LucasArts.com. The game runs in the browser via [Ruffle](https://ruffle.rs/), a Flash emulator written in Rust/WebAssembly.
 
+<img width="1223" height="928" alt="obraz" src="https://github.com/user-attachments/assets/ed7642fe-cee6-4ad5-abd5-8fd28dfb4345" />
+
 ---
 
 ## Background
