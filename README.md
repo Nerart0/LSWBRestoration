@@ -128,4 +128,5 @@ Then open your browser and go to: `http://127.0.0.1`
 
 Original game by **TT Games** / **LucasArts**, published 2011.  
 This is a fan preservation project with no commercial intent.
+
 Need to talk? Email: devkacper80@gmail.com Discord: nerart__
