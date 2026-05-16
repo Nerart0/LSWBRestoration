@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <beta>true</beta>
+    <intro>To explore the Galaxy, use the keyboard you must.</intro>
+    <tracking>
+        <google><id></id></google>
+        <nielsen>
+            <id></id>
+            <page_group></page_group>
+            <event_group></event_group>
+        </nielsen>
+    </tracking>
+    <facebook>
+        <app>123456789</app>
+        <media>media/fb/</media>
+        <share_link>http://localhost/</share_link>
+        <post>Check out LEGO Star Wars III!</post>
+        <prompt>
+            <post>Share this with your friends?</post>
+            <yes>Yes</yes>
+            <no>No</no>
+            <login>Login with Facebook</login>
+        </prompt>
+        <copy>
+            <title>LEGO Star Wars III</title>
+            <description>Play now!</description>
+            <visit_site>Visit Site</visit_site>
+            <post_character>
+                <before>I unlocked</before>
+                <on>on</on>
+                <after>Play now!</after>
+                <and>and</and>
+                <and_earned>and earned</and_earned>
+                <badge>badge</badge>
+                <badges>badges</badges>
+            </post_character>
+            <post_badge>
+                <before>I earned</before>
+                <and>and</and>
+                <badge>badge</badge>
+                <badges>badges</badges>
+                <on>on</on>
+                <after>Play now!</after>
+            </post_badge>
+            <post_video>
+                <before>I watched</before>
+                <after>Play now!</after>
+            </post_video>
+        </copy>
+    </facebook>
+    <paths>
+        <xml>xml/</xml>
+        <swf>swf/</swf>
+        <media>media/</media>
+    </paths>
+    <api>
+        <server>localhost</server>
+        <smartfox_port>9339</smartfox_port>
+    </api>
+    <purchase>
+        <line1>GET THE GAME</line1>
+        <line2>Available now!</line2>
+        <link>http://localhost/</link>
+    </purchase>
+    <planets prefix="lsw3" fullgalaxy="500">
+        <planet>
+            <id>stardestroyer</id>
+            <name>Star Destroyer</name>
+            <path>stardestroyer</path>
+            <swf>stardestroyer.swf</swf>
+            <xml>stardestroyer.xml</xml>
+            <maxusers>10</maxusers>
+        </planet>
+    </planets>
+</config>

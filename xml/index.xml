@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+    <nav home="/stardestroyer/news/">
+        <item>
+            <title>GAME INFO</title>
+            <link target="_self">/stardestroyer/news/</link>
+            <item>
+                <title>Lastest News</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+            <item>
+                <title>Overview</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+            <item>
+                <title>Features</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+        </item>
+        <item>
+            <title>STORY</title>
+            <link target="_self">/stardestroyer/news/</link>
+            <item>
+                <title>The Clone Wars</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+            <item>
+                <title>Republic</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+        </item>
+        <item>
+            <title>MEDIA</title>
+            <link target="_self">/stardestroyer/news/</link>
+            <item>
+                <title>Trailer</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+            <item>
+                <title>Screenshots</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+        </item>
+        <item>
+            <title>GROUND BATTLES</title>
+            <link target="_self">/stardestroyer/news/</link>
+            <item>
+                <title>Reaplay</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+            <item>
+                <title>Web</title>
+                <link target="_self">/stardestroyer/news/</link>
+            </item>
+        </item>
+        <item>
+            <title>PREORDER</title>
+            <link target="_blank">https://www.starwars.com/games-apps/lego-star-wars-iii-the-clone-wars</link>
+        </item>
+    </nav>
+    <footer>
+        <esrb>SET YOUR PATH LIKE: logos/esrb.png</esrb>
+        <lucasArts>
+            <image>SET YOUR PATH LIKE: logos/lucasarts.png</image>
+            <link>http://lucasarts.com</link>
+        </lucasArts>
+        <ttGames>
+            <image>SET YOUR PATH LIKE: logos/ttgames.png</image>
+            <link>http://ttgames.com</link>
+        </ttGames>
+        <platforms>SET YOUR PATH LIKE: logos/platforms.png</platforms>
+        <legal>LUCASARTS AND THE LUCASARTS LOGO ARE REGISTERED TRADEMARKS OF LUCASFILM LTD. © 2005- 2011 LUCASFILM ENTERTAINMENT COMPANY LTD. OR LUCASFILM LTD. & OR TM AS INDICATED. ALL RIGHTS RESERVED. LEGO, THE LEGO LOGO AND THE MINIFIGURE ARE TRADEMARKS OF THE LEGO GROUP. 2005-2011 THE LEGO GROUP. ALL RIGHTS RESERVED.
+TERMS OF USE I PRIVACY POLICY I LEGAL NOTICES</legal>
+        <social>
+            <facebook>
+                <link></link>
+                <hint></hint>
+            </facebook>
+            <twitter>
+                <link></link>
+                <hint></hint>
+            </twitter>
+            <forums>
+                <link></link>
+                <hint></hint>
+            </forums>
+            <share>
+                <text>Share This Site</text>
+            </share>
+        </social>
+    </footer>
+    <overlays>
+        <overlay id="characters" swf=""/>
+        <overlay id="achievements" swf=""/>
+    </overlays>
+</index>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <characters>
+        <character id="0" name="Clone Trooper" head="0" torso="0" legs="0" price="0" unlocked="true">
+            <tag>CLONE</tag>
+            <name>Clone Trooper</name>
+        </character>
+        <character id="1" name="Anakin Skywalker" tag="ANI" head="1" torso="1" legs="1" price="1000" unlocked="false" audio="placeholder"/>
+        <character id="2" name="Obi-Wan Kenobi" tag="OBI" head="2" torso="2" legs="2" price="1000" unlocked="false" audio="placeholder"/>
+        <character id="3" name="Ahsoka Tano" tag="AHS" head="3" torso="3" legs="3" price="1000" unlocked="false" audio="placeholder"/>
+        <character id="4" name="Yoda" tag="YOD" head="4" torso="4" legs="4" price="2000" unlocked="false" audio="placeholder"/>
+        <character id="5" name="Mace Windu" tag="MAC" head="5" torso="5" legs="5" price="2000" unlocked="false" audio="placeholder"/>
+        <character id="6" name="R2-D2" tag="R2D" head="6" torso="6" legs="6" price="2000" unlocked="false" audio="placeholder"/>
+        <character id="7" name="Savage Opress" tag="SAV" head="7" torso="7" legs="7" price="0" unlocked="false" code="oppressivemaul" audio="placeholder"/>
+        <character id="8" name="Luke Skywalker" tag="LUK" head="8" torso="8" legs="8" price="0" unlocked="false" code="kissedmysister" audio="placeholder"/>
+        <character id="9" name="Princess Leia" tag="LEI" head="9" torso="9" legs="9" price="0" unlocked="false" code="yourworshipfulness" audio="placeholder"/>
+        <character id="10" name="Chewbacca" tag="CHE" head="10" torso="10" legs="10" price="0" unlocked="false" code="letthewookieewin" audio="placeholder"/>
+    </characters>
+</data>

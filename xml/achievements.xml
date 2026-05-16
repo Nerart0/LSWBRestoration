@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <achievements>
+        <achievement id="1" name="Welcome" desc="Welcome to the game" icon="1" secret="false" badge="1"/>
+    </achievements>
+    <copy>
+        <unlock_title>Achievement Unlocked!</unlock_title>
+        <unlock_msg>You have unlocked a new achievement.</unlock_msg>
+    </copy>
+</data>

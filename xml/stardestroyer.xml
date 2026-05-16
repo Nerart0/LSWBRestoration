@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <planet id="stardestroyer" music="">
+        <links>
+            <left>/geonosis/news/</left>
+            <right>/ryloth/news/</right>
+        </links>
+        <zones>
+        </zones>
+    </planet>
+</data>
