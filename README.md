@@ -68,6 +68,7 @@ Server/
 ├── GalaxyLoader.swf        # Original loader SWF
 ├── LSWIII.swf              # Main game SWF (modified)
 ├── config.xml              # Variables configuration
+├── smartfox.json           # SmartFoxServer confiuration
 ├── favicon.ico
 ├── media/
 │   ├── characters/
@@ -86,8 +87,7 @@ Server/
     ├── index.xml
     ├── characters.xml
     ├── achievements.xml
-    ├── stardestroyer.xml
-    └── smartfox.json
+    └── stardestroyer.xml
 ```
 
 ---
