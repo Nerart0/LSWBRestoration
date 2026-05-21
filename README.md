@@ -98,7 +98,7 @@ Server/
 
 **Requirements:** Python 3, Git
 
-```bash
+```
 Windows:
 open terminal with UAC permissions (win + R, type: "cmd", ctrl + shift + enter)
 git clone https://github.com/Nerart0/LSWBRestoration
