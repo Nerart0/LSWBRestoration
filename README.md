@@ -50,7 +50,7 @@ Server/
 
 ## How to Run
 
-**Requirements:** Python 3, Git
+**Requirements:** Python 3, Git (you don't need git if you getting repository from this site)
 
 ```
 Windows:
