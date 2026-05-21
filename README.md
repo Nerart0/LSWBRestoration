@@ -14,7 +14,7 @@ This project restores as much of the original functionality as possible using a 
 
 ---
 
-## What Was Fixed
+## What Was Fixed 1.1
 
 ### Server & Infrastructure
 - Built a local Python HTTP server (`server.py`) with CORS headers to serve game files
@@ -55,6 +55,8 @@ This project restores as much of the original functionality as possible using a 
 - `characters.xml` — added `audio` attribute to all characters
 - `achievements.xml` — added placeholder achievement so the panel doesn't crash
 - `stardestroyer.xml` — added planet definition with links
+
+"1.0 version" it's just finded copy from [InternetArchive](https://archive.org/details/lswiii_202305) by Luna679.
 
 ---
 
