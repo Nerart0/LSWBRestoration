@@ -67,6 +67,7 @@ sudo python3 server.py
 Then open your browser and go to: `http://127.0.0.1`
 
 > The server must run on port 80 (root) because the game hardcodes `http://localhost/config.xml`.
+
 > You don't need using only python as a server. Officially, the game ran on a Java server.
 
 ---
