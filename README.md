@@ -94,9 +94,15 @@ Server/
 
 ## How to Run
 
-**Requirements:** Python 3
+**Requirements:** Python 3, Git
 
 ```bash
+Windows:
+open terminal with UAC permissions (win + R, type: "cmd", ctrl + shift + enter)
+git clone https://github.com/Nerart0/LSWBRestoration
+python3 server.py
+
+Linux:
 git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 sudo python3 server.py
