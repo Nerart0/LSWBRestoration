@@ -14,52 +14,6 @@ This project restores as much of the original functionality as possible using a 
 
 ---
 
-## What Was Fixed 1.1
-
-### Server & Infrastructure
-- Built a local Python HTTP server (`server.py`) with CORS headers to serve game files
-- Fixed server working directory so files are served from the correct path
-- Added `Cache-Control: no-store` headers to prevent stale file caching
-- Restored `xml/config.xml` with all required fields including `<tracking>`, `<purchase>`, `<facebook>`, `<beta>` and `<planets>`
-
-### Game Loading
-- Restored `GalaxyLoader.swf` flow — the original loader that reads `xml/config.xml` and loads `LSWIII.swf`
-- Fixed parameter name mismatch (`config` vs `configpath`) between the loader and the HTML
-- Fixed XML parser crash caused by a newline inside `<intro>` tag
-
-### Characters & Audio
-- Added `audio` attribute to all entries in `characters.xml` (was missing, causing 404 on `media/characters/audio/.swf`)
-- Set `audio="placeholder"` for all characters pointing to an existing placeholder SWF
-
-### Map & Player
-- Restored `com.lsw.maps.Map` class in `LSWIII.swf`:
-  - Fixed `charHolder` not being added to the display hierarchy when no `view` MovieClip was passed
-  - Fixed player spawn position using correct negative Y coordinates (Flash Y axis is inverted)
-  - Fixed `updateCharacterZone()` fallback when no collision zones exist (`isSafe = true`, `floor = -370`)
-- Fixed camera tracking — `GalaxyViewer.tick()` now correctly follows the player on both X and Y axes
-- Fixed `map.y` being overwritten each frame by `(1 - scaleY) * height` — corrected the formula to account for player Y position
-
-### Interface (UI)
-- **Navigation bar**: Fixed `index.xml` structure — added proper `<title>` and `<link>` nodes instead of `<label>` and `<path>` so `Navigation` class renders correctly
-- **Dropdown menus**: Added nested `<item>` elements to nav items so submenus slide out on hover
-- **Footer**: Fixed `Footer` class to not block rendering when logo images (ESRB, LucasArts, TT Games) are missing — added `IOErrorEvent` fallback chain
-- **Character panel**: Fixed `CharacterPanelContent.nextBadge()` crash when `view.parent` is null
-- **Purchase message**: Fixed `PurchaseMessage` crash by adding `<purchase>` section to `config.xml`
-- **Facebook message**: Fixed `FacebookMessage` crash by adding `<facebook><prompt>` and `<facebook><copy>` sections to `config.xml`
-- **BETA badge**: Restored BETA badge on the logo by adding `<beta>true</beta>` to `config.xml`
-- **Hologram sound**: Fixed hologram open sound — moved `playSound("hologramOpen")` from `onOverlayLoaded()` to `onAnimationComplete()` so it plays even when overlay SWF fails to load
-
-### XML Configuration
-- `config.xml` — restored all required sections
-- `index.xml` — restored nav structure, footer, overlays
-- `characters.xml` — added `audio` attribute to all characters
-- `achievements.xml` — added placeholder achievement so the panel doesn't crash
-- `stardestroyer.xml` — added planet definition with links
-
-"1.0 version" it's just finded copy from [InternetArchive](https://archive.org/details/lswiii_202305) by Luna679.
-
----
-
 ## File Structure
 
 ```
@@ -124,6 +78,52 @@ Then open your browser and go to: `http://127.0.0.1`
 - Collision zones not defined — player uses hardcoded floor position
 - SmartFox multiplayer server not running — game runs in single-player offline mode
 - Overlay SWFs (`Achievements.swf`, `Characters.swf`) are missing
+
+---
+
+## What Was Fixed 1.1
+
+### Server & Infrastructure
+- Built a local Python HTTP server (`server.py`) with CORS headers to serve game files
+- Fixed server working directory so files are served from the correct path
+- Added `Cache-Control: no-store` headers to prevent stale file caching
+- Restored `xml/config.xml` with all required fields including `<tracking>`, `<purchase>`, `<facebook>`, `<beta>` and `<planets>`
+
+### Game Loading
+- Restored `GalaxyLoader.swf` flow — the original loader that reads `xml/config.xml` and loads `LSWIII.swf`
+- Fixed parameter name mismatch (`config` vs `configpath`) between the loader and the HTML
+- Fixed XML parser crash caused by a newline inside `<intro>` tag
+
+### Characters & Audio
+- Added `audio` attribute to all entries in `characters.xml` (was missing, causing 404 on `media/characters/audio/.swf`)
+- Set `audio="placeholder"` for all characters pointing to an existing placeholder SWF
+
+### Map & Player
+- Restored `com.lsw.maps.Map` class in `LSWIII.swf`:
+  - Fixed `charHolder` not being added to the display hierarchy when no `view` MovieClip was passed
+  - Fixed player spawn position using correct negative Y coordinates (Flash Y axis is inverted)
+  - Fixed `updateCharacterZone()` fallback when no collision zones exist (`isSafe = true`, `floor = -370`)
+- Fixed camera tracking — `GalaxyViewer.tick()` now correctly follows the player on both X and Y axes
+- Fixed `map.y` being overwritten each frame by `(1 - scaleY) * height` — corrected the formula to account for player Y position
+
+### Interface (UI)
+- **Navigation bar**: Fixed `index.xml` structure — added proper `<title>` and `<link>` nodes instead of `<label>` and `<path>` so `Navigation` class renders correctly
+- **Dropdown menus**: Added nested `<item>` elements to nav items so submenus slide out on hover
+- **Footer**: Fixed `Footer` class to not block rendering when logo images (ESRB, LucasArts, TT Games) are missing — added `IOErrorEvent` fallback chain
+- **Character panel**: Fixed `CharacterPanelContent.nextBadge()` crash when `view.parent` is null
+- **Purchase message**: Fixed `PurchaseMessage` crash by adding `<purchase>` section to `config.xml`
+- **Facebook message**: Fixed `FacebookMessage` crash by adding `<facebook><prompt>` and `<facebook><copy>` sections to `config.xml`
+- **BETA badge**: Restored BETA badge on the logo by adding `<beta>true</beta>` to `config.xml`
+- **Hologram sound**: Fixed hologram open sound — moved `playSound("hologramOpen")` from `onOverlayLoaded()` to `onAnimationComplete()` so it plays even when overlay SWF fails to load
+
+### XML Configuration
+- `config.xml` — restored all required sections
+- `index.xml` — restored nav structure, footer, overlays
+- `characters.xml` — added `audio` attribute to all characters
+- `achievements.xml` — added placeholder achievement so the panel doesn't crash
+- `stardestroyer.xml` — added planet definition with links
+
+"1.0 version" it's just finded copy from [InternetArchive](https://archive.org/details/lswiii_202305) by Luna679.
 
 ---
 
