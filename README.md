@@ -56,6 +56,7 @@ Server/
 Windows:
 open terminal with UAC permissions (win + R, type: "cmd", ctrl + shift + enter)
 git clone https://github.com/Nerart0/LSWBRestoration
+cd LSWBRestoration/
 python3 server.py
 
 Linux:
