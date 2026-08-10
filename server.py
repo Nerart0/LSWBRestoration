@@ -3,7 +3,9 @@ import sys
 import platform
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-os.chdir('/home/Nerart/Pobrane/temp/Server/')
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
+
 
 class CORSHandler(SimpleHTTPRequestHandler):
     def end_headers(self):
@@ -12,8 +14,8 @@ class CORSHandler(SimpleHTTPRequestHandler):
         self.send_header('Pragma', 'no-cache')
         super().end_headers()
 
-answer = input("Use default port (80)? (y/n): ").strip().lower()
 
+answer = input("Use default port (80)? (y/n): ").strip().lower()
 if answer == 'y':
     port = 80
 else:
@@ -32,4 +34,16 @@ print(f"Server address: http://{host}:{port}")
 print(f"Serving directory: {server_dir}")
 print(f"Python version: {python_version}")
 
-HTTPServer((host, port), CORSHandler).serve_forever()
+try:
+    HTTPServer((host, port), CORSHandler).serve_forever()
+except PermissionError:
+    print(f"\nPermission denied for port {port}.")
+    if os.name == 'nt':
+        print("Try running this terminal as Administrator, or choose a port above 1024.")
+    else:
+        print("Try running with 'sudo', or choose a port above 1024.")
+    sys.exit(1)
+except OSError as e:
+    print(f"\nCould not start server: {e}")
+    print("The port may already be in use — try a different one.")
+    sys.exit(1)
