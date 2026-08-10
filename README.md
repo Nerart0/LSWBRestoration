@@ -12,7 +12,7 @@ The beta was a browser-based Flash game available on the LucasArts website prior
 
 This project restores as much of the original functionality as possible using a local Python server and Ruffle.
 
-Correct Support Version: 1.2
+Correct Support Version: 1.2 (Not release out yet)
 
 ---
 
@@ -112,6 +112,15 @@ Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0
 
 ## What Was Fixed 1.2 (Sneak Peek)
 
+Notes 1.2:
+- Multiplayer requires **three** processes running simultaneously: `server.py` (port 80), `sfs_sniffer.py` (port 9339), and `run_websockify.py` (port 8181). If any one of them isn't running, the game silently falls back to single-player/offline mode.
+- If you don't need multiplayer, you can skip `sfs_sniffer.py` and `run_websockify.py` entirely — the game works fine offline.
+- Player IDs (e.g. "CLONE 3") increase with each new connection and are never reused while the server is running — this matches the original game's behavior, not a bug.
+- There is no more inactivity timeout — multiplayer connections stay open indefinitely, even if you're away from keyboard.
+- On first load (empty browser cache), the level may take a few extra seconds to appear after the intro — this is normal asset loading (map SWF, textures), not a freeze.
+- The intro can be skipped early via the on-screen "Skip" button; both the full intro and the skip path lead to the same transition.
+- The server was tested by firefox 153.0.1 (64 bits) on fedora linux.
+
 ### Multiplayer Server
 - Built a custom lightweight SmartFoxServer 1.x–compatible server (`sfs_server.py`) in Python, implementing the exact legacy XML-over-socket protocol used by `it.gotoandplay.smartfoxserver.SmartFoxClient` (decompiled and verified against `SysHandler`)
 - Implements version check (`verChk`), login, room list, room creation/joining, user/room variables, and public message broadcasting (used for all player position/state sync)
@@ -152,8 +161,8 @@ Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0
 ## What Was Fixed 1.1
 
 Notes 1.1:
-- You can change resolution of web screen through enlarging window (CTRL + Scroll Up / Scroll Down)
-- The server was tested by firefox 153.0.1 (64 bits) on fedora linux
+- You can change resolution of web screen through enlarging window (CTRL + Scroll Up / Scroll Down).
+- The server was tested by firefox 153.0.1 (64 bits) on fedora linux.
 
 ### Server & Infrastructure
 - Built a local Python HTTP server (`server.py`) with CORS headers to serve game files
