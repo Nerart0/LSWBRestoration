@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LEGO Star Wars III - The Clone Wars Beta</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body {
+            background: #000;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        ruffle-player {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+            socketProxy: [{
+                host: "127.0.0.1",
+                port: 9339,
+                proxyUrl: "ws://127.0.0.1:8181"
+            }]
+        };
+        window.addEventListener("load", function() {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            player.style.width = "100%";
+            player.style.height = "100%";
+            document.body.appendChild(player);
+            player.load({
+                url: "GalaxyLoader.swf",
+                parameters: { config: "xml/config.xml" },
+                scale: "showAll",
+                quality: "best",
+                allowFullscreen: false,
+                autoplay: "auto",
+                letterbox: "on",
+                logLevel: "error"
+            });
+        });
+    </script>
+</body>
+</html>
