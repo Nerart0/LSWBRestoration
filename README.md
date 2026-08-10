@@ -77,14 +77,14 @@ open terminal with UAC permissions (win + R, type: "cmd", ctrl + shift + enter)
 git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 python3 run_websockify.py
-python3 sfs_sniffer.py
+python3 sfs_sniffer.py (or "python -m websockify 8181 127.0.0.1:9339" command)
 python3 server.py
 
 Linux:
 git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 python3 run_websockify.py
-python3 sfs_sniffer.py
+python3 sfs_sniffer.py (or "python -m websockify 8181 127.0.0.1:9339" command)
 sudo python3 server.py
 ```
 
@@ -123,6 +123,7 @@ Notes 1.2:
 - There is no more inactivity timeout — multiplayer connections stay open indefinitely, even if you're away from keyboard.
 - On first load (empty browser cache), the level may take a few extra seconds to appear after the intro — this is normal asset loading (map SWF, textures), not a freeze.
 - The intro can be skipped early via the on-screen "Skip" button; both the full intro and the skip path lead to the same transition.
+- The online and offline version doesn't really work for microsoft edge browser, and you must type `127.0.0.1` instead of `0.0.0.0`.
 - The server was tested by firefox 153.0.1 (64 bits) on fedora linux.
 
 ### Multiplayer Server
@@ -166,6 +167,7 @@ Notes 1.2:
 
 Notes 1.1:
 - You can change resolution of web screen through enlarging window (CTRL + Scroll Up / Scroll Down).
+- This version isn't more supported by this repository.
 - The server was tested by firefox 153.0.1 (64 bits) on fedora linux.
 
 ### Server & Infrastructure
@@ -217,6 +219,7 @@ Notes 1.1:
 - [Ruffle](https://ruffle.rs/) — Flash emulator
 - [JPEXS Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) — SWF decompilation and editing
 - Python 3 — local HTTP server
+- WebSocket - library servers and clients in python (optional if online)
 
 ---
 
