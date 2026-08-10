@@ -12,6 +12,8 @@ The beta was a browser-based Flash game available on the LucasArts website prior
 
 This project restores as much of the original functionality as possible using a local Python server and Ruffle.
 
+Correct Support Version: 1.2
+
 ---
 
 ## File Structure
@@ -21,6 +23,8 @@ Server/
 ├── index.html              # Main HTML page (uses Ruffle)
 ├── index.jsp               # Original JavaServer page
 ├── server.py               # Local Python HTTP server
+├── sfs_sniffer.py          # Custom Python multiplayer server (SmartFoxServer 1.x protocol)
+├── run_websockify.py       # Installs (if needed) and runs the WebSocket-to-TCP bridge for multiplayer
 ├── GalaxyLoader.swf        # Original loader SWF
 ├── LSWIII.swf              # Main game SWF (modified)
 ├── config.xml              # Variables configuration
@@ -48,7 +52,7 @@ Server/
 
 ---
 
-## How to Run
+## How to Run Offline Server
 
 **Requirements:** Python 3, Git (you don't need git if you getting repository from this site)
 
@@ -65,11 +69,32 @@ cd LSWBRestoration/
 sudo python3 server.py
 ```
 
-Then open your browser and go to: `http://127.0.0.1`
+## How to Run Online Server
 
-> The server must run on port 80 (root) because the game hardcodes `http://localhost/config.xml`.
+```
+Windows:
+open terminal with UAC permissions (win + R, type: "cmd", ctrl + shift + enter)
+git clone https://github.com/Nerart0/LSWBRestoration
+cd LSWBRestoration/
+python3 run_websockify.py
+python3 sfs_sniffer.py
+python3 server.py
 
-> You don't need using only python as a server. Officially, the game ran on a Java server.
+Linux:
+git clone https://github.com/Nerart0/LSWBRestoration
+cd LSWBRestoration/
+python3 run_websockify.py
+python3 sfs_sniffer.py
+sudo python3 server.py
+```
+
+Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0:YourPort` (port 80 by default)
+
+> Once: T̶h̶e̶ ̶s̶e̶r̶v̶e̶r̶ ̶m̶u̶s̶t̶ ̶r̶u̶n̶ ̶o̶n̶ ̶p̶o̶r̶t̶ ̶8̶0̶ ̶(̶r̶o̶o̶t̶)̶ ̶b̶e̶c̶a̶u̶s̶e̶ ̶t̶h̶e̶ ̶g̶a̶m̶e̶ ̶h̶a̶r̶d̶c̶o̶d̶e̶s̶ ̶`̶h̶t̶t̶p̶:̶/̶/̶l̶o̶c̶a̶l̶h̶o̶s̶t̶/̶c̶o̶n̶f̶i̶g̶.̶x̶m̶l̶`̶. (v1.1)
+> Now: You can choose port for the server, do it using newest version of server.py. (v1.2)
+
+> Once: Y̶o̶u̶ ̶d̶o̶n̶'̶t̶ ̶n̶e̶e̶d̶ ̶u̶s̶i̶n̶g̶ ̶o̶n̶l̶y̶ ̶p̶y̶t̶h̶o̶n̶ ̶a̶s̶ ̶a̶ ̶s̶e̶r̶v̶e̶r̶.̶ ̶O̶f̶f̶i̶c̶i̶a̶l̶l̶y̶,̶ ̶t̶h̶e̶ ̶g̶a̶m̶e̶ ̶r̶a̶n̶ ̶o̶n̶ ̶a̶ ̶J̶a̶v̶a̶ ̶s̶e̶r̶v̶e̶r̶. (v1.1)
+> Now: This project no longer uses the original Java SmartFoxServer — multiplayer is now handled by a custom Python server (`sfs_server.py`) that reimplements the legacy SmartFoxServer 1.x wire protocol. (v1.2)
 
 ---
 
@@ -79,7 +104,8 @@ Then open your browser and go to: `http://127.0.0.1`
 - Character audio SWFs are missing — audio uses a silent placeholder
 - Star Destroyer map textures are incomplete
 - Collision zones not defined — player uses hardcoded floor position
-- SmartFox multiplayer server not running — game runs in single-player offline mode
+- Multiplayer works via a custom Python SmartFoxServer-compatible implementation (`sfs_server.py`), not the original Java-based server — some edge cases of the original protocol may not be replicated
+- Navigation bar highlights multiple tabs as active simultaneously when they share the same target planet (cosmetic, tied to `index.xml` link structure)
 - Overlay SWFs (`Achievements.swf`, `Characters.swf`) are missing
 
 ---
@@ -117,11 +143,17 @@ Then open your browser and go to: `http://127.0.0.1`
 - Fixed the game rendering at a fixed low internal resolution (960×660) and being CSS-scaled up, causing visible pixelation; `index.html` now lets Ruffle render at full native/device resolution (`scale: "showAll"`, `letterbox: "on"`) instead of a fixed-size canvas stretched via CSS `transform`
 
 ### Server Script
-- Rewrote `server.py` to prompt for a custom port (defaulting to 80) instead of hardcoding it, and to print the server address, port, serving directory, and Python version on startup
+- Removed the hardcoded port 80 requirement from `server.py` — the game's `LSWIII.swf` had `http://localhost/config.xml` hardcoded internally (bypassing the relative path passed from `GalaxyLoader`), forcing port 80; fixed by patching `LSWIII.as` to load `xml/config.xml` as a relative path instead
+- `server.py` now prompts on startup: "Use default port (80)? (y/n)" — if `n`, asks for a custom port instead, so the server no longer requires root/administrator privileges to run
+- On startup, `server.py` now prints the server address and port, the serving directory, and the Python version
 
 ---
 
 ## What Was Fixed 1.1
+
+Notes 1.1:
+- You can change resolution of web screen through enlarging window (CTRL + Scroll Up / Scroll Down)
+- The server was tested by firefox 153.0.1 (64 bits) on fedora linux
 
 ### Server & Infrastructure
 - Built a local Python HTTP server (`server.py`) with CORS headers to serve game files
