@@ -91,9 +91,11 @@ sudo python3 server.py
 Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0:YourPort` (port 80 by default)
 
 > Once: T̶h̶e̶ ̶s̶e̶r̶v̶e̶r̶ ̶m̶u̶s̶t̶ ̶r̶u̶n̶ ̶o̶n̶ ̶p̶o̶r̶t̶ ̶8̶0̶ ̶(̶r̶o̶o̶t̶)̶ ̶b̶e̶c̶a̶u̶s̶e̶ ̶t̶h̶e̶ ̶g̶a̶m̶e̶ ̶h̶a̶r̶d̶c̶o̶d̶e̶s̶ ̶`̶h̶t̶t̶p̶:̶/̶/̶l̶o̶c̶a̶l̶h̶o̶s̶t̶/̶c̶o̶n̶f̶i̶g̶.̶x̶m̶l̶`̶. (v1.1)
+> 
 > Now: You can choose port for the server, do it using newest version of server.py. (v1.2)
 
 > Once: Y̶o̶u̶ ̶d̶o̶n̶'̶t̶ ̶n̶e̶e̶d̶ ̶u̶s̶i̶n̶g̶ ̶o̶n̶l̶y̶ ̶p̶y̶t̶h̶o̶n̶ ̶a̶s̶ ̶a̶ ̶s̶e̶r̶v̶e̶r̶.̶ ̶O̶f̶f̶i̶c̶i̶a̶l̶l̶y̶,̶ ̶t̶h̶e̶ ̶g̶a̶m̶e̶ ̶r̶a̶n̶ ̶o̶n̶ ̶a̶ ̶J̶a̶v̶a̶ ̶s̶e̶r̶v̶e̶r̶. (v1.1)
+> 
 > Now: This project no longer uses the original Java SmartFoxServer — multiplayer is now handled by a custom Python server (`sfs_server.py`) that reimplements the legacy SmartFoxServer 1.x wire protocol. (v1.2)
 
 ---
