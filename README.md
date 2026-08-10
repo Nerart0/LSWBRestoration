@@ -2,7 +2,7 @@
 
 A community-driven effort to restore and run the 2011 promotional beta of **LEGO Star Wars III: The Clone Wars**, originally hosted on LucasArts.com. The game runs in the browser via [Ruffle](https://ruffle.rs/), a Flash emulator written in Rust/WebAssembly.
 
-<img width="1223" height="928" alt="obraz" src="https://github.com/user-attachments/assets/ed7642fe-cee6-4ad5-abd5-8fd28dfb4345" />
+<img width="1223" height="928" alt="HomeScreenshot" src="https://github.com/user-attachments/assets/ed7642fe-cee6-4ad5-abd5-8fd28dfb4345" />
 
 ---
 
@@ -98,7 +98,7 @@ Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0
 > 
 > Now: This project no longer uses the original Java SmartFoxServer — multiplayer is now handled by a custom Python server (`sfs_server.py`) that reimplements the legacy SmartFoxServer 1.x wire protocol. (v1.2)
 
-<img width="1044" height="808" alt="Zrzut ekranu_20260810_161144" src="https://github.com/user-attachments/assets/87ed1f5e-9a3f-43be-945e-10385003ace1" />
+<img width="1044" height="808" alt="MultiScreenshot" src="https://github.com/user-attachments/assets/dae75478-d35a-48fb-a14c-56d71aeb9bf2" />
 
 ---
 
