@@ -4,6 +4,8 @@ A community-driven effort to restore and run the 2011 promotional beta of **LEGO
 
 <img width="1223" height="928" alt="obraz" src="https://github.com/user-attachments/assets/ed7642fe-cee6-4ad5-abd5-8fd28dfb4345" />
 
+<img width="1044" height="808" alt="Zrzut ekranu_20260810_161144" src="https://github.com/user-attachments/assets/87ed1f5e-9a3f-43be-945e-10385003ace1" />
+
 ---
 
 ## Background
