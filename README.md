@@ -4,8 +4,6 @@ A community-driven effort to restore and run the 2011 promotional beta of **LEGO
 
 <img width="1223" height="928" alt="obraz" src="https://github.com/user-attachments/assets/ed7642fe-cee6-4ad5-abd5-8fd28dfb4345" />
 
-<img width="1044" height="808" alt="Zrzut ekranu_20260810_161144" src="https://github.com/user-attachments/assets/87ed1f5e-9a3f-43be-945e-10385003ace1" />
-
 ---
 
 ## Background
@@ -99,6 +97,8 @@ Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0
 > Once: Y̶o̶u̶ ̶d̶o̶n̶'̶t̶ ̶n̶e̶e̶d̶ ̶u̶s̶i̶n̶g̶ ̶o̶n̶l̶y̶ ̶p̶y̶t̶h̶o̶n̶ ̶a̶s̶ ̶a̶ ̶s̶e̶r̶v̶e̶r̶.̶ ̶O̶f̶f̶i̶c̶i̶a̶l̶l̶y̶,̶ ̶t̶h̶e̶ ̶g̶a̶m̶e̶ ̶r̶a̶n̶ ̶o̶n̶ ̶a̶ ̶J̶a̶v̶a̶ ̶s̶e̶r̶v̶e̶r. (v1.1)
 > 
 > Now: This project no longer uses the original Java SmartFoxServer — multiplayer is now handled by a custom Python server (`sfs_server.py`) that reimplements the legacy SmartFoxServer 1.x wire protocol. (v1.2)
+
+<img width="1044" height="808" alt="Zrzut ekranu_20260810_161144" src="https://github.com/user-attachments/assets/87ed1f5e-9a3f-43be-945e-10385003ace1" />
 
 ---
 
