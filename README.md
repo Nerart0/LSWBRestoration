@@ -52,9 +52,12 @@ Server/
 
 ---
 
-## How to Run Offline Server
+**Requirements:** 
+- Python 3
+- Git (you don't need git if you getting repository from this site)
+- WebSockify (optional if you hosting online multiplayer)
 
-**Requirements:** Python 3, Git (you don't need git if you getting repository from this site)
+## How to Run Offline Server
 
 ```
 Windows:
