@@ -114,7 +114,7 @@ Then open your browser and go to: `http://127.0.0.1:YourPort` or `http://0.0.0.0
 
 ---
 
-## What Was Fixed 1.2 (Sneak Peek)
+## What Was Fixed 1.2 (Supported)
 
 Notes 1.2:
 - Multiplayer requires **three** processes running simultaneously: `server.py` (port 80), `sfs_sniffer.py` (port 9339), and `run_websockify.py` (port 8181). If any one of them isn't running, the game silently falls back to single-player/offline mode.
@@ -163,7 +163,7 @@ Notes 1.2:
 
 ---
 
-## What Was Fixed 1.1
+## What Was Fixed 1.1 (Non-Supported)
 
 Notes 1.1:
 - You can change resolution of web screen through enlarging window (CTRL + Scroll Up / Scroll Down).
