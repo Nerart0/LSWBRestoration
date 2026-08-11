@@ -66,7 +66,7 @@ git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 python3 server.py
 
-Linux:
+Linux/macOS:
 git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 sudo python3 server.py
@@ -83,7 +83,7 @@ python3 run_websockify.py
 python3 sfs_sniffer.py (or "python -m websockify 8181 127.0.0.1:9339" command)
 python3 server.py
 
-Linux:
+Linux/macOS:
 git clone https://github.com/Nerart0/LSWBRestoration
 cd LSWBRestoration/
 python3 run_websockify.py
