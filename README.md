@@ -12,7 +12,7 @@ The beta was a browser-based Flash game available on the LucasArts website prior
 
 This project restores as much of the original functionality as possible using a local Python server and Ruffle.
 
-Correct Support Version: 1.2 (Not release out yet)
+Correct Support Version: 1.2
 
 ---
 
