@@ -55,7 +55,7 @@ Server/
 **Requirements:** 
 - Python 3
 - Git (you don't need git if you getting repository from this site)
-- WebSockify (optional if you hosting online multiplayer)
+- Websockify (optional if you hosting multiplayer version)
 
 ## How to Run Offline Server
 
@@ -222,7 +222,7 @@ Notes 1.1:
 - [Ruffle](https://ruffle.rs/) — Flash emulator
 - [JPEXS Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) — SWF decompilation and editing
 - Python 3 — local HTTP server
-- [WebSocket](https://github.com/websocket-client/websocket-client) - library servers and clients in python (optional if online)
+- [Websockify](https://github.com/novnc/websockify) - library servers and clients in python (optional if online)
 
 ---
 
