@@ -221,7 +221,7 @@ Notes 1.1:
 
 - [Ruffle](https://ruffle.rs/) — Flash emulator
 - [JPEXS Free Flash Decompiler](https://github.com/jindrapetrik/jpexs-decompiler) — SWF decompilation and editing
-- Python 3 — local HTTP server
+- [Python 3](https://www.python.org/downloads/release/python-3147/) — local HTTP server
 - [Websockify](https://github.com/novnc/websockify) - library servers and clients in python (optional if online)
 
 ---
